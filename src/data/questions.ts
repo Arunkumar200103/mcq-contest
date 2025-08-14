@@ -4,48 +4,32 @@ export const javaQuestions: Question[] = [
   // ===== Variables & Data Types =====
   {
     id: 1,
-    question: "Which of the following is correct for declaring a constant in Java?",
-    options: ["const int x = 10;", "final int x = 10;", "constant int x = 10;", "static x = 10;"],
+    question: "Which keyword is used to declare a constant in Java?",
+    options: ["const", "final", "constant", "static"],
     correctAnswer: 1,
     category: "Variables",
     difficulty: "easy"
   },
   {
     id: 2,
-    question: "Which of these is a wrapper class for int?",
-    options: ["Int", "Integer", "Number", "IntegerWrapper"],
-    correctAnswer: 1,
+    question: "Which of these is a primitive data type in Java?",
+    options: ["String", "Integer", "boolean", "ArrayList"],
+    correctAnswer: 2,
     category: "Data Types",
     difficulty: "easy"
   },
   {
     id: 3,
-    question: "What is the range of byte data type in Java?",
-    options: ["-128 to 127", "0 to 255", "-256 to 255", "0 to 127"],
-    correctAnswer: 0,
+    question: "What is the default value of a boolean variable in Java?",
+    options: ["true", "false", "null", "0"],
+    correctAnswer: 1,
     category: "Data Types",
     difficulty: "easy"
   },
   {
     id: 4,
-    question: "Which of these is the default value of an int variable?",
-    options: ["0", "null", "undefined", "NaN"],
-    correctAnswer: 0,
-    category: "Data Types",
-    difficulty: "easy"
-  },
-  {
-    id: 5,
-    question: "What is the correct way to declare a float variable?",
-    options: ["float f = 3.14;", "float f = 3.14f;", "float f = (float)3.14;", "Both B and C"],
-    correctAnswer: 3,
-    category: "Data Types",
-    difficulty: "easy"
-  },
-  {
-    id: 6,
-    question: "What is the output of: char c = 'A'; System.out.println(c);",
-    options: ["A", "65", "Error", "a"],
+    question: "Which of these is the correct way to declare a character variable?",
+    options: ["char c = 'A';", "char c = \"A\";", "char c = A;", "char c = 'AB';"],
     correctAnswer: 0,
     category: "Data Types",
     difficulty: "easy"
@@ -53,99 +37,67 @@ export const javaQuestions: Question[] = [
 
   // ===== Operators =====
   {
-    id: 7,
-    question: "Which operator is used for logical AND in Java?",
-    options: ["&", "&&", "AND", "and"],
+    id: 5,
+    question: "Which operator is used for logical OR in Java?",
+    options: ["||", "|", "or", "OR"],
+    correctAnswer: 0,
+    category: "Operators",
+    difficulty: "easy"
+  },
+  {
+    id: 6,
+    question: "What is the output of: System.out.println(7 % 3);",
+    options: ["1", "2", "3", "4"],
     correctAnswer: 1,
+    category: "Operators",
+    difficulty: "easy"
+  },
+  {
+    id: 7,
+    question: "What is the output of: int x = 2; x *= 3; System.out.println(x);",
+    options: ["2", "3", "5", "6"],
+    correctAnswer: 3,
     category: "Operators",
     difficulty: "easy"
   },
   {
     id: 8,
-    question: "What is the output of: int x = 5; System.out.println(x++);",
-    options: ["5", "6", "4", "Error"],
-    correctAnswer: 0,
-    category: "Operators",
-    difficulty: "easy"
-  },
-  {
-    id: 9,
-    question: "What is the output of: System.out.println(true && false);",
-    options: ["true", "false", "1", "0"],
-    correctAnswer: 1,
-    category: "Operators",
-    difficulty: "easy"
-  },
-  {
-    id: 10,
-    question: "What is the output of: System.out.println(10 / 3);",
-    options: ["3.33", "3", "3.0", "Error"],
-    correctAnswer: 1,
-    category: "Operators",
-    difficulty: "easy"
-  },
-  {
-    id: 11,
-    question: "Which operator is used for ternary conditional operations?",
-    options: ["?:", "??", "::", "->"],
-    correctAnswer: 0,
-    category: "Operators",
-    difficulty: "easy"
-  },
-  {
-    id: 12,
-    question: "What is the output of: System.out.println(5 > 3 ? \"Yes\" : \"No\");",
-    options: ["Yes", "No", "true", "false"],
-    correctAnswer: 0,
+    question: "Which of these operators has the highest precedence?",
+    options: ["+", "*", "++", "&&"],
+    correctAnswer: 2,
     category: "Operators",
     difficulty: "easy"
   },
 
   // ===== Strings =====
   {
-    id: 13,
-    question: "What is the output of: System.out.println(\"10\" + 5);",
-    options: ["15", "105", "10 + 5", "Error"],
-    correctAnswer: 1,
-    category: "Strings",
-    difficulty: "easy"
-  },
-  {
-    id: 14,
-    question: "What is the correct way to check if two strings are equal?",
-    options: ["str1 == str2", "str1.equals(str2)", "str1 = str2", "str1.compare(str2)"],
-    correctAnswer: 1,
-    category: "Strings",
-    difficulty: "easy"
-  },
-  {
-    id: 15,
-    question: "Which method is used to get the length of a string?",
-    options: ["length()", "size()", "count()", "getLength()"],
-    correctAnswer: 0,
-    category: "Strings",
-    difficulty: "easy"
-  },
-  {
-    id: 16,
-    question: "What is the output of: System.out.println(\"Java\".length());",
-    options: ["4", "5", "3", "Error"],
-    correctAnswer: 0,
-    category: "Strings",
-    difficulty: "easy"
-  },
-  {
-    id: 17,
-    question: "Which method converts all characters in a string to uppercase?",
-    options: ["toUpper()", "upperCase()", "toUpperCase()", "makeUpperCase()"],
+    id: 9,
+    question: "Which method is used to compare two strings ignoring case?",
+    options: ["equals()", "compareTo()", "equalsIgnoreCase()", "match()"],
     correctAnswer: 2,
     category: "Strings",
     difficulty: "easy"
   },
   {
-    id: 18,
-    question: "What is the output of: System.out.println(\"Hello\".charAt(1));",
-    options: ["e", "H", "l", "o"],
+    id: 10,
+    question: "What is the output of: System.out.println(\"Java\".substring(1,3));",
+    options: ["Ja", "av", "ava", "va"],
+    correctAnswer: 1,
+    category: "Strings",
+    difficulty: "easy"
+  },
+  {
+    id: 11,
+    question: "Which method removes leading and trailing spaces from a string?",
+    options: ["strip()", "trim()", "removeSpaces()", "deleteWhitespace()"],
+    correctAnswer: 1,
+    category: "Strings",
+    difficulty: "easy"
+  },
+  {
+    id: 12,
+    question: "What is the output of: System.out.println(\"Hello\".toLowerCase());",
+    options: ["hello", "HELLO", "Hello", "error"],
     correctAnswer: 0,
     category: "Strings",
     difficulty: "easy"
@@ -153,72 +105,67 @@ export const javaQuestions: Question[] = [
 
   // ===== Arrays =====
   {
-    id: 19,
-    question: "Which statement correctly declares a 2D array?",
-    options: ["int[][] arr;", "int arr[][];", "int[] arr[];", "All of the above"],
-    correctAnswer: 3,
-    category: "Arrays",
-    difficulty: "easy"
-  },
-  {
-    id: 20,
-    question: "What is the default value of an element in an int array?",
-    options: ["0", "null", "undefined", "NaN"],
+    id: 13,
+    question: "What is the index of the first element in an array?",
+    options: ["0", "1", "-1", "Depends on JVM"],
     correctAnswer: 0,
     category: "Arrays",
     difficulty: "easy"
   },
   {
-    id: 21,
-    question: "Which method returns the length of an array?",
-    options: ["length", "length()", "size()", "getLength()"],
-    correctAnswer: 0,
-    category: "Arrays",
-    difficulty: "easy"
-  },
-  {
-    id: 22,
-    question: "What is the output of: int[] arr = {1,2,3}; System.out.println(arr[1]);",
-    options: ["1", "2", "3", "Error"],
+    id: 14,
+    question: "Which property is used to find the number of elements in an array?",
+    options: ["size", "length", "count", "capacity"],
     correctAnswer: 1,
+    category: "Arrays",
+    difficulty: "easy"
+  },
+  {
+    id: 15,
+    question: "Which exception is thrown when accessing an invalid array index?",
+    options: ["NullPointerException", "IndexOutOfBoundsException", "ArrayStoreException", "ArithmeticException"],
+    correctAnswer: 1,
+    category: "Arrays",
+    difficulty: "easy"
+  },
+  {
+    id: 16,
+    question: "Which is the correct syntax to initialize an array with values?",
+    options: ["int[] arr = {1,2,3};", "int arr[] = {1,2,3};", "Both A and B", "new int[3]{1,2,3}"],
+    correctAnswer: 2,
     category: "Arrays",
     difficulty: "easy"
   },
 
   // ===== Methods =====
   {
-    id: 23,
-    question: "Which of these is a correct way to declare a method that returns nothing?",
-    options: ["void methodName()", "null methodName()", "empty methodName()", "return methodName()"],
-    correctAnswer: 0,
-    category: "Methods",
-    difficulty: "easy"
-  },
-  {
-    id: 24,
-    question: "Which keyword is used to define a method in Java?",
-    options: ["method", "define", "void", "function"],
+    id: 17,
+    question: "Which keyword is used to define a method that does not return any value?",
+    options: ["null", "empty", "void", "return"],
     correctAnswer: 2,
     category: "Methods",
     difficulty: "easy"
   },
   {
-    id: 25,
-    question: "Which of these statements is true about methods?",
-    options: [
-      "Methods must always return a value",
-      "Methods can return at most one value",
-      "Methods cannot have parameters",
-      "Methods cannot be overloaded"
-    ],
+    id: 18,
+    question: "Which statement is true about methods in Java?",
+    options: ["Methods must always return a value", "Methods can have 0 or more parameters", "Methods cannot be static", "Methods cannot be private"],
     correctAnswer: 1,
     category: "Methods",
     difficulty: "easy"
   },
   {
-    id: 26,
-    question: "Which keyword is used inside a method to exit from it?",
-    options: ["exit", "break", "stop", "return"],
+    id: 19,
+    question: "Which keyword is used to exit from a method?",
+    options: ["exit", "stop", "break", "return"],
+    correctAnswer: 3,
+    category: "Methods",
+    difficulty: "easy"
+  },
+  {
+    id: 20,
+    question: "What is the default access modifier for methods if not specified?",
+    options: ["private", "public", "protected", "default (package-private)"],
     correctAnswer: 3,
     category: "Methods",
     difficulty: "easy"
@@ -226,50 +173,137 @@ export const javaQuestions: Question[] = [
 
   // ===== Method Overloading =====
   {
-    id: 27,
-    question: "Which statement is true about method overloading in Java?",
-    options: [
-      "Overloaded methods must have different parameter lists",
-      "Overloaded methods must have the same return type",
-      "Overloaded methods must be in different classes",
-      "Overloaded methods cannot have different access modifiers"
-    ],
+    id: 21,
+    question: "Which of these is a valid example of method overloading?",
+    options: ["void print(int a) and void print(double b)", "void print() and int print()", "Both A and B", "Only one method allowed"],
     correctAnswer: 0,
     category: "Method Overloading",
+    difficulty: "easy"
+  },
+  {
+    id: 22,
+    question: "Method overloading is determined at:",
+    options: ["Compile time", "Run time", "JVM start", "Linking time"],
+    correctAnswer: 0,
+    category: "Method Overloading",
+    difficulty: "easy"
+  },
+  {
+    id: 23,
+    question: "Which of the following cannot be changed when overloading?",
+    options: ["Number of parameters", "Type of parameters", "Order of parameters", "Only return type"],
+    correctAnswer: 3,
+    category: "Method Overloading",
+    difficulty: "easy"
+  },
+  {
+    id: 24,
+    question: "Can overloaded methods have different access modifiers?",
+    options: ["Yes", "No", "Only public and private", "Only default"],
+    correctAnswer: 0,
+    category: "Method Overloading",
+    difficulty: "easy"
+  },
+
+  // ===== OOP Concepts =====
+  {
+    id: 25,
+    question: "Which of the following is not a core OOP concept?",
+    options: ["Inheritance", "Encapsulation", "Polymorphism", "Compilation"],
+    correctAnswer: 3,
+    category: "OOP",
+    difficulty: "easy"
+  },
+  {
+    id: 26,
+    question: "Which OOP principle allows using the same method name but different implementations?",
+    options: ["Encapsulation", "Polymorphism", "Inheritance", "Abstraction"],
+    correctAnswer: 1,
+    category: "OOP",
+    difficulty: "easy"
+  },
+  {
+    id: 27,
+    question: "Which OOP concept hides internal details and shows only functionality?",
+    options: ["Abstraction", "Encapsulation", "Inheritance", "Polymorphism"],
+    correctAnswer: 0,
+    category: "OOP",
     difficulty: "easy"
   },
   {
     id: 28,
-    question: "Which of the following is NOT a valid method overloading scenario?",
-    options: [
-      "Changing the number of parameters",
-      "Changing the order of parameters",
-      "Changing only the return type",
-      "Changing parameter types"
-    ],
-    correctAnswer: 2,
-    category: "Method Overloading",
+    question: "Which keyword is used for inheritance in Java?",
+    options: ["extends", "inherits", "derive", "base"],
+    correctAnswer: 0,
+    category: "OOP",
     difficulty: "easy"
   },
+
+  // ===== Encapsulation =====
   {
     id: 29,
-    question: "Can method overloading occur in the same class?",
-    options: ["Yes", "No", "Only in inherited classes", "Only in abstract classes"],
-    correctAnswer: 0,
-    category: "Method Overloading",
+    question: "Which access modifier is most restrictive in Java?",
+    options: ["protected", "public", "private", "default"],
+    correctAnswer: 2,
+    category: "Encapsulation",
     difficulty: "easy"
   },
   {
     id: 30,
-    question: "Which of these is a valid example of method overloading?",
-    options: [
-      "void print(int a) and void print(double b)",
-      "void print() and int print()",
-      "void print(int a) and void print(int b)",
-      "Both A and C"
-    ],
+    question: "Encapsulation is achieved by using:",
+    options: ["Private fields and public methods", "Only public fields", "Global variables", "Static fields"],
     correctAnswer: 0,
-    category: "Method Overloading",
+    category: "Encapsulation",
+    difficulty: "easy"
+  },
+  {
+    id: 31,
+    question: "Which method type is commonly used to read private variables?",
+    options: ["getter", "setter", "reader", "fetcher"],
+    correctAnswer: 0,
+    category: "Encapsulation",
+    difficulty: "easy"
+  },
+  {
+    id: 32,
+    question: "Which method type is commonly used to modify private variables?",
+    options: ["getter", "setter", "changer", "updater"],
+    correctAnswer: 1,
+    category: "Encapsulation",
+    difficulty: "easy"
+  },
+
+  // ===== Constructors =====
+  {
+    id: 33,
+    question: "Which of these is true about constructors in Java?",
+    options: ["They must have a return type", "They cannot be overloaded", "They have the same name as the class", "They must be public"],
+    correctAnswer: 2,
+    category: "Constructors",
+    difficulty: "easy"
+  },
+  {
+    id: 34,
+    question: "What is the default constructor?",
+    options: ["A constructor with no parameters", "A constructor with default values", "A constructor created manually", "A constructor with return type void"],
+    correctAnswer: 0,
+    category: "Constructors",
+    difficulty: "easy"
+  },
+  {
+    id: 35,
+    question: "Can a constructor be private?",
+    options: ["Yes", "No", "Only in abstract classes", "Only in interfaces"],
+    correctAnswer: 0,
+    category: "Constructors",
+    difficulty: "easy"
+  },
+  {
+    id: 36,
+    question: "Which keyword is used to call another constructor in the same class?",
+    options: ["super()", "this()", "constructor()", "call()"],
+    correctAnswer: 1,
+    category: "Constructors",
     difficulty: "easy"
   }
 ];
